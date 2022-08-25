@@ -1,0 +1,22 @@
+Decentralized
+Authenticates Item
+Crossboarder Authentication
+Digital Record
+Real Time
+
+What is Origin?
+
+Decentralized ledger technology for crossborder authentication, anti-counterfeit and digital storage solution.
+
+Services
+1. Crossborder Authentication
+2. Data-based Consumer Experience
+3. Real-time product tracking
+4. Counterfeit detetection
+
+Products
+1. Anti-Counterfeit Labels
+2. Smart Codes
+
+Pricing
+1. Price per smart codes x quantity
