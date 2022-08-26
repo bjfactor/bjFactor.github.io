@@ -56,7 +56,6 @@ main {
 main .section {
     width: 100%;
     height: auto;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +65,6 @@ main .section .sectionContent {
     height: auto;
     margin: 0px;
     padding: 0px;
-    border: 1px solid black;
 }
 
 .sectionContent .hero-word {
@@ -74,15 +72,13 @@ main .section .sectionContent {
     height: auto;
     margin: 50px auto 0px auto;
     padding: 0px;
-    border: 1px solid black;
 }
 
 .sectionContent h1 {
     width: 63%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 127px;
+    font-size: 90px;
     font-weight: bold;
-    border: 1px solid black;
     padding: 0px 0px 20px 0px;
     margin: -31px auto 0px auto;
 }
@@ -91,13 +87,11 @@ main .section .sectionContent {
     max-width: 63%;
     margin: 0px auto 0px auto;
     font-size: 20px;
-    border: 1px solid black;
 }
 
 main .section .sectionButton{
     width: 100%;
     text-align: center;
-    border: 1px solid black;
     margin: 0px;
     padding: 0px;
 }
@@ -114,11 +108,6 @@ main .section .sectionButton{
 main .section .sectionImage{
     width: 100%;
     height: auto;
-    border: 1px solid black;
-}
-
-.sectionImage img {
-    border: 1px solid black;
 }
 
 /* Service section from here */
@@ -142,76 +131,127 @@ main .service {
 
 /* Media queries starting from here */
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) and (max-width: 1340px ) {
     nav div .navbar {
         display: block;
     }
+
+    .sectionContent h1 {
+        width: 80%;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 73px;
+        font-weight: bold;
+        padding: 10px 0px 10px 0px;
+        margin: 0px auto 0px auto;
+    }
     
 }
 
-@media screen and (max-width: 1279px) {
+@media only screen and (max-width: 1280px) {
     nav div .navbar {
-        display: none;
+        display: block;
+    }
+
+    .sectionContent .hero-word {
+        width: 80%;
+        margin: 20px auto 0px auto;
+        font-weight: lighter;
     }
     
-    main .section .sectionContent {
-        width: 100%;
-        margin: 30px 0px 0px 0px;
-    }
-
     .sectionContent h1 {
-        font-size: 70px;
+        width: 80%;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 65px;
         font-weight: bold;
-        line-height: 1;
+        padding: 10px 0px 10px 0px;
+        margin: 0px auto 0px auto;
     }
-
+    
     .sectionContent .sectionContent-pitch {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 18px;
+        max-width: 80%;
+        margin: 0px auto 0px auto;
+        padding: 5px 5px 0px 5px;
+        font-size: 16px;
     }
 
     .sectionButton button {
-        width: 350px;
-        height: 50px;
-        font-size: 18px;
+        width: 300px;
+        font-size: 16px;
         border-radius: 24px;
-        margin: 30px 0px 30px 0px;
-        border: 4px solid black;
-    }
+        margin: 40px 0px 40px 0px;
 
+    }
+        
 }
 
-
-@media screen and (max-width: 380px) {    
+@media only screen and (max-width: 800px) {
     nav div .navbar {
         display: none;
     }
 
-    main .section .sectionContent {
+    .sectionContent .hero-word {
         width: 100%;
-        margin: 10px 0px 0px 0px;
+        margin: 20px auto 0px auto;
+        font-weight: lighter;
     }
-
+    
     .sectionContent h1 {
-        font-size: 36px;
-        font-weight: 700;
+        width: 100%;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        padding: 10px 0px 10px 0px;
+        margin: 0px auto 0px auto;
     }
-
+    
     .sectionContent .sectionContent-pitch {
         max-width: 100%;
-        font-size: 9px;
-        line-height: 1.25;
+        margin: 0px auto 0px auto;
+        padding: 5px 5px 0px 5px;
+        font-size: 12px;
     }
 
     .sectionButton button {
-        width: 250px;
-        height: 40px;
-        font-size: 14px;
+        width: 275px;
+        font-size: 16px;
         border-radius: 24px;
-        margin: 30px 0px 30px 0px;
-        border: 2px solid black;
+        margin: 20px 0px 20px 0px;
     }
+
+}
+
+@media only screen and (max-width: 380px) {    
+    nav div .navbar {
+        display: none;
+    }
+    
+    .sectionContent .hero-word {
+        width: 100%;
+        margin: 20px auto 0px auto;
+    }
+    
+    .sectionContent h1 {
+        width: 100%;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 10px 0px 10px 0px;
+        margin: 0px auto 0px auto;
+    }
+    
+    .sectionContent .sectionContent-pitch {
+        max-width: 100%;
+        margin: 0px auto 0px auto;
+        padding: 5px 5px 0px 5px;
+        font-size: 12px;
+    }
+
+    .sectionButton button {
+        width: 275px;
+        font-size: 16px;
+        border-radius: 24px;
+        margin: 20px 0px 20px 0px;
+    }
+
     
 }
