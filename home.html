@@ -10,9 +10,25 @@
     <link rel="sylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="/home.js"></script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer>
+        function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+        }
+        window.onload = function() {
+            google.accounts.id.initialize({
+            client_id: "YOUR_GOOGLE_CLIENT_ID",
+            callback: handleCredentialResponse
+        })
+            google.accounts.id.renderButton(
+                document.getElementById("buttonDiv"),
+                { theme: "outline", size: "large" } // customization attributes
+            );
+            google.accounts.id.prompt(); // also display the One Tap dialog
+        }
+    </script>
 </head>
 <body>
+    <button id="buttonDiv"></button>
     <nav class="container-fluid p-0 shadow-lg">
         <div class="container-fluid my-0 px-5">
             <ul class="container-fluid d-flex flex-wrap nav-justified justify-content-lg-start justify-content-md-start justify-content-sm-start">
@@ -82,10 +98,12 @@
                             <input type="pssword" class="form-control" id="inputPassword" placeholder="Password">
                             <button type="button" class="btn btn-primary">Login</button>
                         </div>
-                            <div id="g_id_onload" data_client_id="YOUR_GOOGLE_CLIENT_ID" data-login-uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">                    
-                        </div>
-                            <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
-                            </div>
+                            
+                                <div id="g_id_onload" data_client_id="YOUR_GOOGLE_CLIENT_ID" data-login-uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">                    
+                                </div>
+                                <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                                </div>
+                            
                         </div>
                     </form>
                 </div>
