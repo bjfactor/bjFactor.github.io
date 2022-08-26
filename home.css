@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,6 +43,39 @@ nav div .navbar {
 .navbar:hover {
     color: ghostwhite;
 }
+
+/* Search button CSS from here */
+form {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+input {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid ghostwhite;
+    border-radius: 24px;
+    font-size: 14px;
+    background-color: ghostwhite;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 0px 10px 0px 20px;
+    margin-top: 1px;
+}
+
+input:focus {
+    width: 100%;
+    display:block;
+    transition: width 1s;
+    width: 300px;
+    cursor: pointer;
+    border: 0px;
+    text-align: left;
+    background-color: white;
+}
+
+
 
 
 /* main section from here */
@@ -189,6 +223,7 @@ main .service {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.25;
+    height: 75px;
 }
 
 .card .card-footer {
