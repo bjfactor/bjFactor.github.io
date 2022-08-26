@@ -10,6 +10,7 @@
     <link rel="sylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="/home.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     <nav class="container-fluid p-0 shadow-lg">
@@ -23,8 +24,8 @@
                 <span class="ms-auto"></span>
                 <li>
                     <button type="button" class="mr-auto navbar border-0 me-4">
-                        <form>
-                        <input type="text" name="search" placeholder="Search here...">
+                        <form class="searchForm">
+                        <input type="text" name="search" class="inputSearch" placeholder="Search here...">
                         <!-- <i class="bi bi-search">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -34,8 +35,8 @@
                     </button>
                 </li>
                 <li>
-                    <button type="button" class="navbar border-0 me-5" onclick="location.href='home.css'">Login</button>
-                </li>
+                    <button type="button" class="navbar border-0 me-5" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                </li>  
                 <li>
                    <button type="button" class="navbar border-0 me-3" onclick="location.href='home.css'">
                     <i class="bi bi-facebook">
@@ -64,6 +65,33 @@
             </ul>
         </div>
     </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header m-0 border-0">
+                    <img src="/workspace/img/200pxblacklogo.png" style="width:48px; height: auto" class="p-0 d-inline-block"/>
+                    <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Welcome Back!</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email Address">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <input type="pssword" class="form-control" id="inputPassword" placeholder="Password">
+                            <button type="button" class="btn btn-primary">Login</button>
+                        </div>
+                            <div id="g_id_onload" data_client_id="YOUR_GOOGLE_CLIENT_ID" data-login-uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">                    
+                        </div>
+                            <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <main>
         <!-- Header section from here -->
