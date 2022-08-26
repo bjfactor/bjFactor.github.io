@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: #f4f5f5;
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +53,7 @@ main {
 }
 
 main .section {
+    background-color: #f4f5f5;
     width: 100%;
     height: auto;
     display: flex;
@@ -108,24 +108,99 @@ main .section .sectionButton{
 main .section .sectionImage{
     width: 100%;
     height: auto;
+    margin: 40px 0px 20px 0px;
 }
 
 /* Service section from here */
 main .service {
     width: 100%;
-    height: 910px;
+    height: auto;
     display: block;
-    background-color: #ffffff;
+    background: -webkit-linear-gradient(#e9ecef, #f8f9fa);
+    padding: 0px;
+    margin-top: 20px;
 }
 
 .service .serviceContent {
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 100px 260px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceHeader {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.serviceContent .serviceTitle {
+    background-color: transparent;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: semibold;
+    font-size: 55px;
+    margin: 0px auto 0px auto;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+    display: block;
+    color: black;
+}
+
+.serviceContent .headerParagraph {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: transparent;
     margin-right: auto;
     margin-left: auto;
-    height: 910px;
-    width: 100%;
-    background-color: #fbfbfd;
-    border-radius: 12px;;
+    border: 0px;
+}
 
+.card .card-img {
+    align-content: center;
+    width: 75%;
+    height: auto;
+    margin: 20px auto 20px auto;
+}
+
+.card .card-img:hover {
+    opacity: 90%;
+}
+
+.card h5 {
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: semibold;
+    color:#1d2227;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.card .card-footer {
+    background: transparent;
+    border: 0px;
+}
+
+.card-footer p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #1d2227;
 }
 
 
