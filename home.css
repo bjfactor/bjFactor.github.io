@@ -45,13 +45,13 @@ nav div .navbar {
 }
 
 /* Search button CSS from here */
-form {
+.searchForm {
     position: relative;
     width: auto;
     height: auto;
 }
 
-input {
+.inputSearch {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid ghostwhite;
@@ -64,7 +64,7 @@ input {
     margin-top: 1px;
 }
 
-input:focus {
+.inputSearch:focus {
     width: 100%;
     display:block;
     transition: width 1s;
@@ -75,7 +75,13 @@ input:focus {
     background-color: white;
 }
 
-
+/* Modal login css from here */
+.modal-header {
+    background-color: lightgray;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
 
 
 /* main section from here */
@@ -221,7 +227,7 @@ main .service {
 
 .card p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.25;
     height: 75px;
 }
