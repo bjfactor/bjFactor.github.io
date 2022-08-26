@@ -12,7 +12,6 @@ body {
 nav {
     width: 100%;
     min-height: 50px;
-    
 }
 
 nav div {
@@ -29,7 +28,7 @@ nav div ul {
 nav div img {
     height: 48px;
     box-sizing: border-box;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 nav div .navbar {
@@ -57,31 +56,50 @@ main {
 main .section {
     width: 100%;
     height: auto;
-    display: block;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 main .section .sectionContent {
     width: 100%;
-    margin: 20px 0px 0px 0px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.sectionContent .hero-word {
+    width: 63%;
+    height: auto;
+    margin: 50px auto 0px auto;
+    padding: 0px;
+    border: 1px solid black;
 }
 
 .sectionContent h1 {
+    width: 63%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 120px;
+    font-size: 127px;
     font-weight: bold;
+    border: 1px solid black;
+    padding: 0px 0px 20px 0px;
+    margin: -31px auto 0px auto;
 }
 
 .sectionContent .sectionContent-pitch {
     max-width: 63%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto 0px auto;
     font-size: 20px;
-    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
 }
 
 main .section .sectionButton{
     width: 100%;
     text-align: center;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sectionButton button {
@@ -89,13 +107,18 @@ main .section .sectionButton{
     height: 50px;
     font-size: 18px;
     border-radius: 24px;
-    margin: 40px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
     border: 4px solid black;
 }
 
 main .section .sectionImage{
     width: 100%;
     height: auto;
+    border: 1px solid black;
+}
+
+.sectionImage img {
+    border: 1px solid black;
 }
 
 /* Service section from here */
