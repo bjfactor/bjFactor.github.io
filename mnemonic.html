@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/mnemonic.css">
     <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/inputPhrase.js"></script>
     <script src="/wordlist.js"></script>
 </head>
-<body>
+<body onload = "merge()">
     <!-- header section from here -->
     <header class="container-fluid">
         <nav class="container navbar  justify-content-lg-start jusitfy-content-md-start justify-content-sm-center my-3">
@@ -26,8 +27,8 @@
             <div class="container d-flex row p-0">
                 <div class="col-7 m-0">
                     <h1>Recovery Phrase</h1>
-                    <p>Write down recovery phrase.</p>
-                    <div class="recovery-phrase">
+                    <div id="helpword">Write down recovery phrase.</div>
+                    <div class="recovery-phrase" id="displayRecoveryTable">
                         <table>
                             <tr>
                                 <td id="phrase1"></td>
@@ -48,7 +49,9 @@
                                 <td id="phrase12"></td>
                             </tr>
                         </table>
-                        <table class="input-recovery-phrase">
+                    </div>
+                    <div class="input-recovery-phrase" id="inputRecoveryTable" style="display: none">
+                        <table>
                             <tr>
                                 <td><input type=text id="inputPhrase1" name="inputPhrase1" placeholder="1."></td>
                                 <td><input type=text id="inputPhrase2" name="inputPhrase2" placeholder="2."></td>
@@ -69,11 +72,11 @@
                             </tr>
                         </table>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="merge()" id="mergebtn">Next</button>
-                    <button type="button" class="btn btn-primary" onclick="recoveryPhrase()" id="mergebtn">Next</button>
+                    <button type="button" class="btn btn-primary w-50 ms-4" onclick="verifyPhrase()" id="displayRecoveryBtn">Next</button>
+                    <button type="button" class="btn btn-primary w-50 ms-4" onclick="recoveryPhrase()" id="inputPhrase" style="display: none">Submit</button>
                     
                 </div>
-                <div class="col-5 m-0">
+                <div class="col-5 mt-5 pt-3">
                     <p>Important tips:</p>
                     <p>Your recovery phrase will give you access to your account in case you lose your password. Be sure to write it down in a piece of paper and to keep it somwhere safe and secure.</p>
                     <p>WARNING: Never disclose your recovery phrase. Anyone with this phrase can have access to your account.</p>
