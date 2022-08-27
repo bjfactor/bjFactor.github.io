@@ -9,43 +9,49 @@ body {
     flex-direction: column;
 }
 
+/* navigation header from here */
 nav {
     width: 100%;
     min-height: 50px;
 }
 
-nav div {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    background: linear-gradient(180deg, #1d2227, #1e242c);
-}
+    nav div {
+        height: 65px;
+        width: 100%;
+        position: fixed;
+        background: linear-gradient(180deg, #1d2227, #1e242c);
+    }
 
-nav div ul {
-    list-style-type: none;
-}
+    nav div ul {
+        list-style-type: none;
+    }
 
-nav div img {
-    height: 48px;
-    box-sizing: border-box;
-    margin-top: 1px;
-}
+        nav div ul img {
+            height: 65px;
+            width: auto;
+            box-sizing: border-box;
+            margin-top: 0px;
+            padding: 5px;
+        }
 
-nav div .navbar {
-    background: transparent;
-    color: gray;
-    display: inline-block;
-    height: 50px;
-    font-size: 14px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+        nav div ul .navbar {
+            background: transparent;
+            color: gray;
+            display: inline-block;
+            height: 65px;
+            font-size: 16px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
-.navbar:hover {
-    color: ghostwhite;
-}
+        .navbar:hover {
+            color: ghostwhite;
+            height: 63px;
+        }
+
+/* navigation header up to here */
 
 /* Search button CSS from here */
-.searchForm {
+/* .searchForm {
     position: relative;
     width: auto;
     height: auto;
@@ -73,7 +79,7 @@ nav div .navbar {
     border: 0px;
     text-align: left;
     background-color: white;
-}
+} */
 
 /* Modal login css from here */
 .modal-header {
@@ -82,7 +88,6 @@ nav div .navbar {
     padding-bottom: 0px;
     padding-top: 0px;
 }
-
 
 /* main section from here */
 main {
