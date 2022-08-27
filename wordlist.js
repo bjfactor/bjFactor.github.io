@@ -1,4 +1,6 @@
-function merge (manila, cebu, davao, quezoncity, bacolod, baguio, zamboanga, tagaytay, iloilo, subic, makati, antipolo, ) {
+const recovery = [];
+
+function merge (manila, cebu, davao, quezoncity, bacolod, baguio, zamboanga, tagaytay, iloilo, subic, makati, antipolo) {
 
 var mnemonic =[];
 
@@ -2774,7 +2776,7 @@ var antipolo = ["abandon", "ability", "able", "about", "above", "absent", "absor
 "wrestle", "wrist", "write", "wrong", "yard", "year", "yellow", "you", "young",
 "youth", "zebra", "zero", "zone", "zoo"];
 
-    for (let i = 0; i < 1; ++i) {
+    for (let i = 0; i < 1; i++) {
         seed1 = manila[Math.floor(Math.random()*manila.length)]
         if (!mnemonic.includes(seed1)) {
             mnemonic.push(seed1);
@@ -2834,10 +2836,68 @@ var antipolo = ["abandon", "ability", "able", "about", "above", "absent", "absor
         if (!mnemonic.includes(seed12)) {
             mnemonic.push(seed12);
         }
+    }
+    
+    document.getElementById('phrase1').innerHTML = mnemonic[0];
+    recovery.push(mnemonic[0]);
 
-        // console.log(seed1, seed2, seed3, seed4, seed5, seed6, seed7, seed8, seed9, seed10, seed11, seed12)
-        console.log(mnemonic);
+    document.getElementById('phrase2').innerHTML = mnemonic[1];
+    recovery.push(mnemonic[1]);
 
+    document.getElementById('phrase3').innerHTML = mnemonic[2];
+    recovery.push(mnemonic[2]);
+
+    document.getElementById('phrase4').innerHTML = mnemonic[3];
+    recovery.push(mnemonic[3]);
+
+    document.getElementById('phrase5').innerHTML = mnemonic[4];
+    recovery.push(mnemonic[4]);
+
+    document.getElementById('phrase6').innerHTML = mnemonic[5];
+    recovery.push(mnemonic[5]);
+
+    document.getElementById('phrase7').innerHTML = mnemonic[6];
+    recovery.push(mnemonic[6]);
+
+    document.getElementById('phrase8').innerHTML = mnemonic[7];
+    recovery.push(mnemonic[7]);
+
+    document.getElementById('phrase9').innerHTML = mnemonic[8];
+    recovery.push(mnemonic[8]);
+
+    document.getElementById('phrase10').innerHTML = mnemonic[9];
+    recovery.push(mnemonic[9]);
+
+    document.getElementById('phrase11').innerHTML = mnemonic[10];
+    recovery.push(mnemonic[10]);
+
+    document.getElementById('phrase12').innerHTML = mnemonic[11];
+    recovery.push(mnemonic[11]);
+
+    console.log(mnemonic);
+    console.log(recovery);
+}
+
+function recoveryPhrase() {
+    for (i = 0; i < recovery.length; i++) {
+        console.log(recovery[i]);
+    }
+
+    if (
+        document.getElementById('inputPhrase1').value == recovery[0] && 
+        document.getElementById('inputPhrase2').value == recovery[1] && 
+        document.getElementById('inputPhrase3').value == recovery[2] && 
+        document.getElementById('inputPhrase4').value == recovery[3] && 
+        document.getElementById('inputPhrase5').value == recovery[4] &&
+        document.getElementById('inputPhrase6').value == recovery[5] &&
+        document.getElementById('inputPhrase7').value == recovery[6] &&
+        document.getElementById('inputPhrase8').value == recovery[7] &&
+        document.getElementById('inputPhrase9').value == recovery[8] &&
+        document.getElementById('inputPhrase10').value == recovery[9] &&
+        document.getElementById('inputPhrase11').value == recovery[10] &&
+        document.getElementById('inputPhrase12').value == recovery[11]) {
+        window.location.href = "/dashboard.html";
+    } else {
+        console.log('fail');
     }
 }
-return merge();
