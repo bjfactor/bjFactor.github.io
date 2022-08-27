@@ -2898,6 +2898,7 @@ function recoveryPhrase() {
         document.getElementById('inputPhrase12').value == recovery[11]) {
         window.location.href = "/dashboard.html";
     } else {
-        console.log('fail');
+        document.getElementById('helpword').innerHTML = 'Seed phrase does not match.';
+        document.getElementById('helpword').style.color = 'red';
     }
 }
