@@ -13,6 +13,7 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
+    <!-- navigation header from here -->
     <nav class="container-fluid p-0 shadow-lg">
         <div class="container-fluid my-0 px-5">
             <ul class="container-fluid d-flex flex-wrap nav-justified justify-content-lg-start justify-content-md-start justify-content-sm-start">
@@ -22,6 +23,8 @@
                 <li><button type="button" class="navbar border-0 mx-2" onclick="location.href='/pricing.html'">Pricing</button></li>
                 <li><button type="button" class="navbar border-0 mx-2" onclick="location.href='/support.html'">Support</button></li>
                 <span class="ms-auto"></span>
+                
+                <!-- Search is muted for now, no relevant use is needed. -->
                 <!-- <li>
                     <button type="button" class="mr-auto navbar border-0 me-4">
                         <form class="searchForm">
@@ -34,6 +37,7 @@
                         </form>
                     </button>
                 </li> -->
+
                 <li>
                     <button type="button" class="navbar border-0 me-5" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                 </li>  
@@ -65,8 +69,10 @@
             </ul>
         </div>
     </nav>
+    <!-- navigation header up to here -->
 
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <!-- login modal from here -->
+    <div class="modal fade" data-bs-backdrop="static" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header m-0 border-0">
@@ -80,7 +86,7 @@
                             <input type="email" class="form-control mt-5" name="username" id="username" aria-describedby="emailHelp" placeholder="Email Address">
                             <div id="emailHelp" class="form-text mb-3 ms-2">We'll never share your email with anyone else.</div>
                             <input type="password" class="form-control mb-3" name="password" id="password" placeholder="Password">
-                            <input onclick="loginSuccess()" type="button" id="login" class="w-100 btn btn-primary" value="Continue with email">
+                            <input onclick="loginSuccess()" data-bs-target="#mnemonicModal" type="button" id="login" class="w-100 btn btn-primary" value="Continue with email">
                         </div>
                         <p class="text-center">- or -</p>
                         <div class="googleButton mb-3">
@@ -98,9 +104,10 @@
             </div>
         </div>
     </div>
+    <!-- login modal up to here -->
     
     <main>
-        <!-- Header section from here -->
+        <!-- hero section from here -->
         <div class="container-fluid section d-block">
             <div class="sectionContent">
                 <p class="hero-word text-center fw-semibold fs-5">#GoForReal</p>
@@ -114,6 +121,7 @@
                 <img class="img-fluid align-items-lg-center" src="/workspace/img/sneaker1.png" style="width: 100%; height: auto; max-width: 875px"/>
             </div>
         </div>
+        <!-- hero section up to here -->
 
         <!-- Service section from here -->
         <div class="container-fluid service" id="serviceSection">
@@ -174,6 +182,7 @@
                 </div>
             </div>
         </div>
+        <!-- service section up to here -->
     </main>
 
 </body>
