@@ -19,7 +19,7 @@ function loginSuccess() {
     let password = document.getElementById(`password`).value;
 
     if (username == 'bryanfactor@gmail.com' && password == 'password') {
-        window.location.href = "/seedphrase.html";
+        window.location.href = "/mnemonic.html";
     } else if (username == 'bryanfactor@gmail.com' && password != 'password') {
         document.getElementById('emailHelp').innerHTML = 'Please enter correct password.';
         document.getElementById('emailHelp').style.color = 'red';
