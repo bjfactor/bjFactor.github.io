@@ -344,7 +344,7 @@ main .service {
 
 .discover-origin {
     background-color: #f4f5f5;
-    padding: 50px;
+    padding: 50px 50px 200px 50px;
     margin: 0px;
     height: auto;;
 }
@@ -369,7 +369,49 @@ main .service {
     line-height: 1.75;
 } 
 
+.partnerSection p {
+    margin: 50px auto 0px auto;
+    font-size: 20px;
+}
 
+.partnerSection table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partnerSection table td img {
+    margin: -40px 20px 0px 20px;
+    padding: 0px;
+}
+
+/* Footer section */
+
+footer {
+    background-color: #2e3338;
+}
+
+footer table {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+footer table thead {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+footer table thead td {
+    color:#fd7152;
+}
+
+footer table td {
+    color: white;
+    padding: 2px 30px 2px 30px;
+}
 
 /* Media queries starting from here */
 
