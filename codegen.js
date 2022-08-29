@@ -17,14 +17,20 @@ const toTimeStamp = (strDate) => {
     return dt;
    } 
 
-// Location javascript
-
+//Country of Origin Javasript
 function authCode() {
-    let code = 'Afghanistan';
-    
+
+    var cName = document.getElementById('inputCodeName').value;
+    document.getElementById('codeName').innerHTML = "Code Name: " + cName;
+
+    var qCode = parseInt(document.getElementById('inputQuantity').value);
+    document.getElementById('quantityCode').innerHTML = "Quantity: " + qCode;
+
+    // JS for Smart Code Generation
+    var code = document.getElementById('countOfOrigin').value; 
     switch(code) {
         case 'Afghanistan':
-            console.log(toTimeStamp(timeStamp) + '004');
+            document.getElementById('smartCode').innerHTML = "Smart Code: " + toTimeStamp(timeStamp) + '004';
         break;
 
         case 'Albania':
@@ -275,13 +281,38 @@ function authCode() {
             console.log(toTimeStamp(timeStamp) + '218');
         break;
 
-        case "Ecuador":
-            console.log(toTimeStamp(timeStamp) + '218');
+        case "Egypt":
+            console.log(toTimeStamp(timeStamp) + '818');
+        break;
+
+        case "El Salvador":
+            console.log(toTimeStamp(timeStamp) + '222');
+        break;
+
+        case "Eritrea":
+            console.log(toTimeStamp(timeStamp) + '232');
+        break;
+
+        case "Estonia":
+            console.log(toTimeStamp(timeStamp) + '233');
+        break;
+
+        case "Eswatini":
+            console.log(toTimeStamp(timeStamp) + '748');
+        break;
+
+        case "Ethiopia":
+            console.log(toTimeStamp(timeStamp) + '231');
         break;
     }
+
+    document.getElementById('smart-code-row').style.display = 'block';
 }
 
-return authCode();
+console.log('test');
+
+
+
 
 
 
