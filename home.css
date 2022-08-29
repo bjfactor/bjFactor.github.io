@@ -13,6 +13,7 @@ body {
 nav {
     width: 100%;
     min-height: 50px;
+    z-index: 2;
 }
 
     nav div {
@@ -83,7 +84,6 @@ nav {
 
 /* Modal login css from here */
 .modal-header {
-    background-color: lightyellow;
     margin: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -198,7 +198,7 @@ main .service {
     width: 100%;
     height: auto;
     display: block;
-    background: -webkit-linear-gradient(#f4f5f5, #f8f9fa);
+    background-color: #f4f5f5;
     padding: 0px;
     margin-top: 20px;
 }
@@ -285,6 +285,90 @@ main .service {
     text-align: center;
     color: #1d2227;
 }
+
+/* About us section from here */
+
+.aboutUs-section {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f5f5;
+}
+
+.aboutUs-section .aboutUs-section-left {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.aboutUs-section-left h5 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.aboutUs-section-right {
+    margin-right: 200px;
+}
+
+.aboutUs-section-right p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: darkslategrey;
+    margin-bottom: 50px;
+}
+
+.aboutUs-section-right h5 {
+    font-size: 24px;
+    width: 50%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #f53308;
+}
+
+.aboutUs-section-right button {
+    padding: 5px 45px 5px 45px;
+    margin-bottom: 50px;
+    border: 3px solid #ff5833;
+    background-color: transparent;
+    border-radius: 25px;
+    color: #f53308;
+    font-size: 18px;
+}
+
+.aboutUs-section-right button:hover {
+    border: 3px solid #f53308;
+    background-color: #f53308;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.discover-origin {
+    background-color: #f4f5f5;
+    padding: 50px;
+    margin: 0px;
+    height: auto;;
+}
+
+.discover-origin div {
+    background: linear-gradient(230deg, #0A0068, #1c47ae, #26007B, #5E00A0);
+    backdrop-filter: blur(21px);
+    padding: 15px;
+}
+
+.discover-origin div h5 {
+    font-size: 40px;
+    padding: 25px 25px 0px 25px;
+    color: ghostwhite;
+} 
+
+.discover-origin div p {
+    font-size: 20px;
+    padding: 25px;
+    padding-top: 10px;
+    color: ghostwhite;
+    line-height: 1.75;
+} 
+
 
 
 /* Media queries starting from here */
