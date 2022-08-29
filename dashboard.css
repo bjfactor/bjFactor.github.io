@@ -41,6 +41,7 @@ body {
 
 .sidebar nav ul li:hover {
     background-color: #f53308;
+    transition-duration: 0.75s;
 }
 
 .sidebar nav a {
@@ -91,15 +92,22 @@ header div input {
     border:0px;
 }
 
-header div .btn {
+header div .create-btn {
     margin-top: 15px;
     height: 35px;
     font-size: 16px;
     padding: 0px 20px 0px 20px;
     background-color: #ff5833;
+    border: 1px solid #ff5833;
     text-transform: uppercase;
     color: white;
     font-weight: 400;
+}
+
+header .create-btn:hover {
+    border: 1px solid #f53308;
+    background-color: #f53308;
+    color: white;
 }
 
 /* Content section from here */
@@ -126,6 +134,35 @@ content div.containerbox-sect {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 9px;
     padding: 20px 30px 0px 30px;
+}
+
+.containerbox-sect .smart-key-col {
+    margin: 0px;
+    padding: 25px 0px 0px 20px;
+    height: 70px;
+}
+
+.containerbox-sect .smart-key-col-btn {
+    margin: 0px;
+    padding: 20px 0px 0px 20px;
+    height: 70px;
+}
+
+.containerbox-sect .smart-key-btn {
+    border: 2px solid #ff5833;
+    padding: 5px 50px 5px 50px;
+    margin: 0px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color:#ff5833;
+}
+
+.containerbox-sect .smart-key-btn:hover {
+    background-color: #ff5833;
+    font-size: 14px;
+    color: #ffffff;
+    transition-duration: 0.5s;
 }
 
 div.containerbox-sect h5 {
@@ -163,4 +200,23 @@ div.containerbox-sect table td {
     height: 50px;
 }
 
+.custom-select {
+    width: 315px;
+}
 
+.createBtn {
+    background-color: #ff5833;
+    border: 1px solid #ff5833;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.createBtn:hover {
+    background-color: #f53308;
+    border: 1px solid #f53308;
+}
