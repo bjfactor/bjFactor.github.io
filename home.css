@@ -19,7 +19,7 @@ nav {
         height: 65px;
         width: 100%;
         position: fixed;
-        background: linear-gradient(180deg, #1d2227, #1e242c);
+        background: #1c47ae;
     }
 
     nav div ul {
@@ -36,7 +36,7 @@ nav {
 
         nav div ul .navbar {
             background: transparent;
-            color: gray;
+            color: gainsboro;
             display: inline-block;
             height: 65px;
             font-size: 16px;
@@ -45,7 +45,7 @@ nav {
 
         .navbar:hover {
             color: ghostwhite;
-            height: 63px;
+            height: 65px;
         }
 
 /* navigation header up to here */
@@ -83,7 +83,7 @@ nav {
 
 /* Modal login css from here */
 .modal-header {
-    background-color: lightgray;
+    background-color: lightyellow;
     margin: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -98,7 +98,7 @@ main {
 }
 
 main .section {
-    background-color: #f4f5f5;
+    background-color: #e9ecef;
     width: 100%;
     height: auto;
     display: flex;
@@ -126,10 +126,13 @@ main .section .sectionContent {
     font-weight: bold;
     padding: 0px 0px 20px 0px;
     margin: -31px auto 0px auto;
+    background: linear-gradient(270deg, black, #0A0068, #7A00B2, #1c47ae, #26007B, #42008D, #5E00A0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
 }
 
 .sectionContent .sectionContent-pitch {
-    max-width: 63%;
+    max-width: 50%;
     margin: 0px auto 0px auto;
     font-size: 20px;
 }
@@ -144,16 +147,50 @@ main .section .sectionButton{
 .sectionButton button {
     width: 325px;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 24px;
-    margin: 50px 0px 50px 0px;
-    border: 4px solid black;
+    margin: 10px 0px 0px 0px;
+    border: 3px solid #ff5833;
+    background-color: transparent;
+    color: #f53308;
+    font-weight: 600;
+}
+
+.sectionButton button:hover {
+    border: 3px solid #f53308;
+    background-color: #f53308;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.fw-bold {
+    color: #f53308;
+}
+
+.spx {
+    color:#f53308;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.sectionImage p {
+    font-size: 28px;
+    text-align: left;
+    padding: 200px;
+    font-weight: 300;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
 }
 
 main .section .sectionImage{
     width: 100%;
     height: auto;
-    margin: 40px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
 }
 
 /* Service section from here */
@@ -161,7 +198,7 @@ main .service {
     width: 100%;
     height: auto;
     display: block;
-    background: -webkit-linear-gradient(#e9ecef, #f8f9fa);
+    background: -webkit-linear-gradient(#f4f5f5, #f8f9fa);
     padding: 0px;
     margin-top: 20px;
 }
@@ -170,7 +207,7 @@ main .service {
     height: 100%;
     width: 100%;
     margin: 0px 0px 0px 0px;
-    padding: 0px 100px 260px 100px;
+    padding: 0px 100px 0px 100px;
     display: flex;
     flex-direction: column;
 }
