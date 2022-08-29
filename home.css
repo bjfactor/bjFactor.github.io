@@ -388,13 +388,14 @@ main .service {
 
 footer {
     background-color: #2e3338;
+    background-image: ();
 }
 
 footer table {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -411,6 +412,11 @@ footer table thead td {
 footer table td {
     color: white;
     padding: 2px 30px 2px 30px;
+    font-size: 16px;
+}
+
+.footercredits td {
+    color: white;
 }
 
 /* Media queries starting from here */
