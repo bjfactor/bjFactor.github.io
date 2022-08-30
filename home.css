@@ -189,6 +189,7 @@ main .section .sectionImage{
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     text-align: center;
     align-content: center;
 }
@@ -206,7 +207,7 @@ main .service {
 .service .serviceContent {
     height: 100%;
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     padding: 0px 100px 0px 100px;
     display: flex;
     flex-direction: column;
@@ -232,6 +233,7 @@ main .service {
 
 .serviceContent .headerParagraph {
     text-align: center;
+    margin-bottom: 50px;
     font-weight: 400;
     font-size: 20px;
     color: black;
@@ -291,6 +293,7 @@ main .service {
 .aboutUs-section {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
     background-color: #f4f5f5;
 }
 
@@ -344,7 +347,7 @@ main .service {
 
 .discover-origin {
     background-color: #f4f5f5;
-    padding: 50px 50px 200px 50px;
+    padding: 50px 50px 150px 50px;
     margin: 0px;
     height: auto;;
 }
@@ -369,9 +372,10 @@ main .service {
     line-height: 1.75;
 } 
 
-.partnerSection p {
+.partnerSection h5 {
     margin: 50px auto 0px auto;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .partnerSection table {
@@ -380,7 +384,7 @@ main .service {
 }
 
 .partnerSection table td img {
-    margin: -40px 20px 0px 20px;
+    margin: -50px 20px 0px 20px;
     padding: 0px;
 }
 
