@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/dashboard.css">
+    <link rel="stylesheet" href="transaction.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/codegen.js"></script>
+</head>
+<body class="container-fluid p-0 m-0">
+    <div class="container-fluid p-0 m-0 d-flex row">
+        <sidebar class="sidebar d-inline col-1 p-0 m-0">
+            <div>
+                <img src="/workspace/img/200pxblacklogo.png" style="width: 70px; height: 70px" class="navbar-brand m-0 p-0"/>
+            </div>
+            <nav class="h-auto">
+                <ul class="list-unstyled">
+                    <li class="d-flex flex-column">
+                        <i class="bi bi-blockquote-left mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-blockquote-left" viewBox="0 0 16 16"><path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"/></svg>
+                        </i>
+                        <a class="text-decoration-none" href="#">DASHBOARD</a>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <i class="bi bi-code-square mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/></svg>
+                        </i>
+                        <a class="text-decoration-none" href="#">SMART CODES</a>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <i class="bi bi-boxes mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16"><path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/></svg>
+                        </i>
+                        <a class="text-decoration-none" href="#">TXN</a>
+                    </li>
+                </ul>
+            </nav>
+        </sidebar>
+        <main class="container-fluid col m-0 p-0">
+            <header class="container-fluid p-0 m-0 d-flex">
+                <div class="col-2">
+                    <p>bryanfactor@gmail.com</p>
+                </div>
+                <div class="col-8">
+                    <input type="text" placeholder="Search by Smart Code / Txn Hash / Address / Block"/>
+                </div>
+                <div class="div-smartCode col-2">
+                    <button type="button" class="create-btn rounded-0" data-bs-toggle="modal" data-bs-target="#smartCodeBtnModal">Create Smart Code</button>
+                </div>
+            </header>
+
+            <div class="modal fade" data-bs-backdrop="static" id="smartCodeBtnModal" tabindex="-1" aria-labelledby="smartCodeBtnModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="d-flex modal-header m-0 border-bottom-1">
+                            <p class="d-inline text-uppercase mt-3 ps-0 fw-semibold">CREATE SMART CODE</p>
+                            <button type="button" class="d-inline btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="countOfOrigin" class="mb-2">Country of Origin*</label>
+                                <input type="text" class="form-control rounded-0" id="countOfOrigin" placeholder="Ex: Philippines">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="countOfOrigin" class="mb-2">Code Name*</label>
+                                <input type="text" id="inputCodeName" class="form-control rounded-0" placeholder="My Smart Code">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="inputQuantity" class="mb-2">Quantity*</label>
+                                <input type="number" id="inputQuantity" class="form-control rounded-0" placeholder="1000000">
+                            </div>
+                            <button onclick="authCode()" id="createBtn" type="button" data-bs-dismiss="modal" class="createBtn">Create</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <content class="container-fluid">
+                <div class="container-fluid">
+                    <div class="containerbox-sect">
+                        <h5>Balunga Hotel & Resort</h5>
+                        <div>
+                            <table>
+                                <tr >
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Smart Code:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>16618184-89176-608</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Brand Name:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>Balunga Hotel & Resort</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Product/ Item:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>Website</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Quantity:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>1</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Date & time of Origin:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>Aug-30-2022 08:17:31 AM +UTC</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Country of Origin:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>Philippines</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Txn Hash:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>0xd540620ca82aa3c4fa0fc1b49276c215f32796aa0ad931c95ba32018a6b66f2e</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Block:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>11291262 </p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Address:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>0x2d7822ba66dc311993e6a374ee5bbe7838ed5ae5</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Contract Address:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>0xb676d114190b445ce6bba13969c54c3b4f0ca631</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Value:</p></th>
+                                    <td class="border-0 fs-5 m-0"><p>$0.00</p></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-0 pe-3 fs-5 m-0"><p>Status:</p></th>
+                                    <td class="border-0 text-success fs-5 m-0"><p>Owner</p></td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                        <div class="clickHere mb-5">
+                        </div>
+                    </div>
+                </div>
+            </content>
+        </main>
+    </div>
+</body>
+</html>
