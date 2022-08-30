@@ -220,3 +220,13 @@ div.containerbox-sect table td {
     background-color: #f53308;
     border: 1px solid #f53308;
 }
+
+a {
+    color: #f53308;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f53308;
+    text-decoration: underline;
+}
