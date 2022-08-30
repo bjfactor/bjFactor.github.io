@@ -1,0 +1,14 @@
+table {
+    margin-left: 50px;
+}
+
+
+table th p {
+    margin: 0px;
+    padding: 0px;
+}
+
+table td p {
+    margin: 0px;
+    padding: 0px;
+}
